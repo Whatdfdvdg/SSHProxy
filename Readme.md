@@ -5,7 +5,7 @@ title: Readme
 ---
 
 # Readme
-创建时间: 2015/08/06 22:02:57  修改时间: 2015/08/06 22:22:49 作者:lijiao
+创建时间: 2015/08/06 22:02:57  修改时间: 2015/08/06 23:30:05 作者:lijiao
 
 ----
 
@@ -48,7 +48,7 @@ sshd日志中会有如下记录:
 	syslogin_perform_logout: logout() returned an error
 	Received disconnect from 172.17.42.1: 11: disconnected by user)
 
-[文章](http://www.linuxweblog.com/blogs/sandip/20090203/setloginuid-failed-opening-loginuid)说是应为内核没有enabled AUDIT, 需要重新编译内核。但可以通过把下面的一行注释掉，规避这个问题:
+[文章](http://www.linuxweblog.com/blogs/sandip/20090203/setloginuid-failed-opening-loginuid)说是因为内核没有enabled AUDIT, 需要重新编译内核。但可以通过把下面的一行注释掉，规避这个问题:
 
 	session required        pam_loginuid.so
 
